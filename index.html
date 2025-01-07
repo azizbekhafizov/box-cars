@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxCars</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar_icon">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="sidebar_elements">
+        <ul class="navlinks">
+          <li class="link">
+            <a href="">Home</a>
+          </li>
+          <li class="link">
+            <a href="">Listings </a>
+          </li>
+          <li class="link">
+            <a href="">Blog</a>
+          </li>
+          <li class="link">
+            <a href="">Pages </a>
+          </li>
+          <li class="link">
+            <a href="">About </a>
+          </li>
+          <li class="link">
+            <a href="">Contact</a>
+          </li>
+          <li class="link">
+            <a href=""><i class="fa-solid fa-user"></i> Sign In</a>
+          </li>
+        </ul>
+        <a href="" class="button-link">
+          <button>Submit Listing</button>
+        </a>
+      </div>
+    </div>
+
+    <header style="display: none;" class="header">
+      <div class="navbar container">
+        <div class="left_head">
+          <h1>BOXCARS</h1>
+          <span
+            ><i class="fa-solid fa-mobile-screen-button"></i> +75 123 456
+            789</span
+          >
+        </div>
+        <div class="right_head">
+          <ul class="navlinks">
+            <li class="link">
+              <a href="">Home</a>
+            </li>
+            <li class="link">
+              <a href="">Listings </a>
+            </li>
+            <li class="link">
+              <a href="">Blog</a>
+            </li>
+            <li class="link">
+              <a href="">Pages </a>
+            </li>
+            <li class="link">
+              <a href="">About </a>
+            </li>
+            <li class="link">
+              <a href="">Contact</a>
+            </li>
+            <li class="link">
+              <a href=""><i class="fa-solid fa-user"></i> Sign In</a>
+            </li>
+          </ul>
+          <a href="" class="button-link">
+            <button>Submit Listing</button>
+          </a>
+        </div>
+        <div class="menu_icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div style="display: none;" class="head">
+      <div class="head-top">
+        <p>Find cars for sale and for rent near you</p>
+        <h1>Find Your Dream Car</h1>
+      </div>
+
+      <div class="search-bar">
+        <select>
+          <option>Used Cars</option>
+          <option>New Cars</option>
+        </select>
+        <div class="divider"></div>
+        <select>
+          <option>Any Makes</option>
+          <option>Toyota</option>
+          <option>Honda</option>
+        </select>
+        <div class="divider"></div>
+        <select>
+          <option>Any Models</option>
+          <option>Corolla</option>
+          <option>Civic</option>
+        </select>
+        <div class="divider"></div>
+        <select>
+          <option>All Prices</option>
+          <option>$0 - $10,000</option>
+          <option>$10,000 - $20,000</option>
+        </select>
+        <button class="search-icon">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="head-bottom">
+        <center>
+          <img src="./images/head-img.png" alt="" />
+        </center>
+      </div>
+    </div>
+
+    <div style="display: none;" class="browse">
+      <div class="browse-top">
+        <h1>Browse by Type</h1>
+      </div>
+
+      <div class="browse-wrapper">
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>suv</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Sedan</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Hatchback</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Coupe</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Hybrid</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Convertible</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Van</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Truck</p>
+        </div>
+        <div class="browse-card">
+          <i class="fa-solid fa-car-side"></i>
+          <p>Electric</p>
+        </div>
+      </div>
+
+      <div class="car-container">
+        <div class="car car1">
+          <div class="car-left">
+            <h1>Are You Looking For a Car ?</h1>
+            <p>
+              We are committed to providing our customers with exceptional
+              service.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <img src="./images/browse1.png" alt="" />
+        </div>
+        <div class="car car2">
+          <div class="car-left">
+            <h1>Do You Want to Sell a Car ?</h1>
+            <p>
+              We are committed to providing our customers with exceptional
+              service.
+            </p>
+            <button>Get Started</button>
+          </div>
+          <img src="./images/browse2.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none;" class="most">
+      <div class="most-top">
+        <h1>The Most Searched Cars</h1>
+      </div>
+      <ul>
+        <li><a href="#">In Stock</a></li>
+        <li><a href="#">Sedan</a></li>
+        <li><a href="#">SUV</a></li>
+        <li><a href="#">Convertible</a></li>
+      </ul>
+
+      <div class="most-wrapper">
+        <img src="./images/most1.png" alt="" />
+        <img src="./images/most2.png" alt="" />
+        <img src="./images/most3.png" alt="" />
+        <img src="./images/most4.png" alt="" />
+      </div>
+    </div>
+
+    <div style="display: none;" class="choose container">
+      <div class="choose-top">
+        <h1>Why Choose Us?</h1>
+      </div>
+
+      <div class="choose-wrapper">
+        <div class="choose-card">
+          <img src="./images/choose1.png" alt="" />
+          <h3>Special Financing Offers</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+        </div>
+
+        <div class="choose-card">
+          <img src="./images/choose2.png" alt="" />
+          <h3>Trusted Car Dealership</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+        </div>
+
+        <div class="choose-card">
+          <img src="./images/choose3.png" alt="" />
+          <h3>Transparent Pricing</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+        </div>
+
+        <div class="choose-card">
+          <img src="./images/choose4.png" alt="" />
+          <h3>Expert Car Service</h3>
+          <p>
+            Our stress-free finance department that can find financial solutions
+            to save you money.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none;" class="latest">
+      <div class="latest-top">
+        <h1>Latest Cars</h1>
+      </div>
+      <div class="latest-wrapper">
+        <img src="./images/most1.png" alt="" />
+        <img src="./images/most2.png" alt="" />
+        <img src="./images/most3.png" alt="" />
+        <img src="./images/most4.png" alt="" />
+      </div>
+    </div>
+
+    <div class="great container">
+      <div class="great-top">
+        <h1>Need Some Inspiration?</h1>
+        <div class="buttons">
+          <button>Automatics Cars</button>
+          <button>SUVs</button>
+          <button>Electrics Cars</button>
+          <button>New in Stock</button>
+          <button>Petrol</button>
+          <button>Diesel</button>
+        </div>
+      </div>
+
+      <div class="great-wrapper">
+        <div class="great-left">
+          <h1>Who is BoxCar</h1>
+          <p>Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt
+            mollit anim id es</p>
+        </div>
+        <div class="great-right">
+          <img src="./images/great1.png" alt="">
+          <img src="./images/great2.png" alt="">
+          <img src="./images/great3.png" alt="">
+          </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="team-top">
+        <h1>Our Team</h1>
+      </div>
+
+      <div class="team-wrapper">
+        <div class="team-card team1">
+          <h3>Courtney Henry</h3>
+          <p>Development Manager</p>
+        </div>
+        <div class="team-card team2">
+          <h3>Jerome Bell</h3>
+          <p>Software Developer</p>
+        </div>
+        <div class="team-card team3">
+        <h3>Jerome Bell</h3>
+        <p>Software Tester </p>
+        </div>
+        <div class="team-card team4">
+          <h3>Arlene McCoy</h3>
+          <p>Arlene McCoy</p>
+        </div>
+        <div class="team-card team5">
+          <h3>Jenny Wilson</h3>
+          <p>UI/UX Designer</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="blog">
+        <div class="blog-top">
+          <h1>Latest Blog Posts</h1>
+        </div>
+        <div class="blog-wrapper">
+          <div class="blog-card">
+            <img src="./images/latest1.png" alt="">
+            <p>admin  <span>November 22, 2023</span></p>
+            <h3>2024 BMW ALPINA XB7 with exclusive details,
+              extraordinary</h3>
+          </div>
+          <div class="blog-card">
+            <img src="./images/latest2.png" alt="">
+            <p>admin  <span>November 22, 2023</span></p>
+            <h3>BMW X6 M50i is designed to exceed your
+              sportiest.</h3>
+          </div>
+          <div class="blog-card">
+            <img src="./images/latest3.png" alt="">
+            <p>admin  <span>November 22, 2023</span></p>
+            <h3>BMW X5 Gold 2024 Sport Review: Light on
+              Sport</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="premium">
+        <div class="premium-left">
+          <h1>Explore Our Premium
+            Brands</h1>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id es</p>
+              <button>Show All Brands</button>
+        </div>
+        <img src="./images/premium.png" alt="">
+      </div>
+
+      <div class="subscribe">
+        <h1>Join BoxCar</h1>
+        <p>Receive pricing updates, shopping tips & more!</p>
+        <div class="subscribe-wrapper">
+          <input type="text" placeholder="Your email address">  
+          <button>Sign Up</button>
+      </div>
+      </div>
+
+      <footer>
+        <div class="footer container">
+          <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#">Get in Touch</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Live Chat</a></li>
+                  <li><a href="#">How It Works</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Our Brands</h3>
+              <ul>
+                  <li><a href="#">Toyota</a></li>
+                  <li><a href="#">Porsche</a></li>
+                  <li><a href="#">Audi</a></li>
+                  <li><a href="#">BMW</a></li>
+                  <li><a href="#">Ford</a></li>
+                  <li><a href="#">Nissan</a></li>
+                  <li><a href="#">Peugeot</a></li>
+                  <li><a href="#">Volkswagen</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Vehicles Type</h3>
+              <ul>
+                  <li><a href="#">Sedan</a></li>
+                  <li><a href="#">Hatchback</a></li>
+                  <li><a href="#">SUV</a></li>
+                  <li><a href="#">Hybrid</a></li>
+                  <li><a href="#">Electric</a></li>
+                  <li><a href="#">Coupe</a></li>
+                  <li><a href="#">Truck</a></li>
+                  <li><a href="#">Convertible</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Sale Hours</h3>
+              <ul>
+                  <li>Monday - Friday: 09:00AM - 09:00PM</li>
+                  <li>Saturday: 09:00AM - 07:00PM</li>
+                  <li>Sunday: Closed</li>
+              </ul>
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-invision"></i></a>
+              </div>
+          </div>
+      </div>
+      </footer>
+
+    <script src="/script.js"></script>
+  </body> 
+</html>
