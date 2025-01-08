@@ -80,6 +80,7 @@
 }
 
 .browse {
+    margin-top: 100px;
     .browse-top {
         h1 {
             font-weight: 700;
@@ -124,7 +125,8 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-top: 100px;
+    position: relative;
+    top: 150px;
     .car1 {
         background-color: #e9f2ff;
         button {
@@ -184,6 +186,8 @@
     }
 }
 .most {
+    position: relative;
+    top: 250px;
     .most-top {
         h1 {
             text-align: center;
@@ -226,37 +230,51 @@
             height: 432px;
             width: 328px;
             border-radius: 16px;
-            .boc-icon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            h3 {
-                margin-top: 10px;
-            }
-            p {
-                margin-top: 10px;
-            }
-            i {
+            .icon-wrapper{
                 margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+
+            .card-icon{
+                flex-direction: column;
+                img{
+                    width: 16px;
+                    margin: auto;
+                    height: 14px;
+                }
+                span{
+                    text-align: center;
+                }
             }
-            h3,
-            p,
-            i {
-                margin-left: 15px;
+        }
+
+        .text{
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        h3, p{
+            margin-top: 10px;
+            margin-left: 15px;
+
+        }
             }
+
             img {
+            margin-top: -2px;
                 width: 100%;
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
             }
         }
     }
-}
+
 
 .choose {
     position: relative;
-    top: 200px;
+    top: 350px;
     background-color: #f9fbfc;
     height: 490px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -322,6 +340,57 @@
         justify-content: center;
         display: flex;
         gap: 45px;
+
+        .latest-card{
+            background-color: #050B20;
+            height: 432px;
+            width: 328px;
+            border-radius: 16px;
+            color: white;
+            .card-top{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    margin-top: -5px;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                }
+            }
+
+            h3{
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+            p{
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                margin-left: 15px;
+            }
+            .text{
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .icon-wrapper{
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-around;
+            .card-icon{
+                flex-direction: column;
+                img{
+                    width: 16px;
+                    margin: auto;
+                    height: 14px;
+                }
+                span{
+                    text-align: center;
+                }
+            }
+            }
+        }
     }
 }
 
