@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&family=Fugaz+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .header {
   overflow-x: hidden;
@@ -388,10 +389,6 @@
   position: relative;
   top: 300px;
 }
-.great .great-wrapper {
-  display: flex;
-  justify-content: center;
-}
 .great .great-top {
   max-width: 1000px;
   width: 100%;
@@ -428,36 +425,47 @@
   color: white;
 }
 .great .great-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Kichik ekranlarda sathni to'g'rilash uchun */
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
   background-color: #405FF2;
-  height: 435px;
+  height: auto; /* Balandlik avtomatik o'lchansin */
+  padding: 20px; /* Kichik ekranlar uchun bo'sh joy qo'shish */
   border-radius: 16px;
 }
 .great .great-wrapper .great-left {
-  padding-top: 150px;
-  margin-left: 80px;
+  flex: 1; /* Kichik ekranlarda moslashadi */
+  text-align: center; /* Markazga olib kelish */
+  margin: 20px; /* Tashqi bo‘sh joy */
 }
 .great .great-wrapper .great-left h1 {
   color: white;
-  font-size: 40px;
+  font-size: 32px; /* Moslashuvchan shrift o'lchami */
   line-height: 40px;
   font-weight: 400;
-  width: 282px;
+  width: auto; /* O'ramga to'g'rilanadi */
 }
 .great .great-wrapper .great-left p {
   margin-top: 15px;
-  width: 295px;
+  width: auto; /* Matn maydoni o'ramga moslashadi */
   color: white;
   font-weight: 400;
   font-size: 15px;
   line-height: 27px;
 }
 .great .great-wrapper .great-right {
-  position: relative;
-  top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Rasmlar bir qatorga sig'masa yangi qatorga o'tadi */
+  margin: 20px;
 }
 .great .great-wrapper .great-right img {
-  margin-left: 15px;
+  width: 297px;
+  height: 229px;
+  margin: 10px; /* Rasmlar orasiga bo'sh joy */
+  border-radius: 8px; /* Rasmlarga burchakli radius qo'shildi */
 }
 
 .team {
@@ -468,7 +476,7 @@
   display: flex;
   gap: 25px;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 45px;
 }
@@ -650,6 +658,20 @@
   .choose {
     height: 520px;
   }
+  .great .great-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .great .great-right {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    display: inline;
+  }
+  .premium img {
+    width: 447px;
+    height: 332px;
+  }
 }
 @media (max-width: 1024px) {
   .head .search-bar {
@@ -664,6 +686,22 @@
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     gap: 15px;
+  }
+  .premium {
+    gap: 15px;
+  }
+  .premium .premium-left h1 {
+    font-size: 25px;
+    width: 320px;
+    line-height: 35px;
+  }
+  .premium .premium-left p {
+    width: 400px;
+    font-size: 14px;
+  }
+  .premium img {
+    width: 350px;
+    height: 250px;
   }
 }
 @media (max-width: 800px) {
@@ -698,9 +736,26 @@
     padding-top: 20px;
   }
 }
+@media (max-width: 768px) {
+  .premium {
+    flex-direction: column;
+  }
+  .premium .premium-left {
+    text-align: center;
+    margin: auto;
+  }
+  .subscribe .subscribe-wrapper {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
 @media (max-width: 707px) {
   .choose {
     height: 820px;
+  }
+  .great .great-wrapper .great-right img {
+    width: 250px;
+    height: 200px;
   }
 }
 @media (max-width: 600px) {
@@ -781,6 +836,16 @@
   .most .most-top h1 {
     width: 300px;
     margin: auto;
+  }
+  .great .great-top h1 {
+    width: 350px;
+    font-size: 30px;
+  }
+  .premium .premium-left h1 {
+    margin: auto;
+  }
+  .premium .premium-left p {
+    width: 350px;
   }
 }
 .sidebar {
@@ -870,6 +935,16 @@
   color: #333;
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .footer-column {
+    margin: auto;
+    text-align: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;

@@ -47,3 +47,17 @@
     font-size: 18px;
     color: #333;
 }
+
+
+
+@media (max-width: 1024px) {
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+        
+        .footer-column{
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

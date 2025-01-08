@@ -331,12 +331,6 @@
 .great{
     position: relative;
     top: 300px;
-    .great-wrapper{
-        display: flex;
-        justify-content: center;
-        // gap: 15px;
-        // margin-top: 100px;
-    }
     .great-top{
         max-width: 1000px;  
         width: 100%;
@@ -376,26 +370,32 @@
     }
 
     .great-wrapper{
+        display: flex;
+        flex-wrap: wrap; /* Kichik ekranlarda sathni to'g'rilash uchun */
+        justify-content: center;
+        align-items: center;
         margin-top: 100px;
         background-color: #405FF2;
-        height: 435px;
+        height: auto; /* Balandlik avtomatik o'lchansin */
+        padding: 20px; /* Kichik ekranlar uchun bo'sh joy qo'shish */
         border-radius: 16px;
 
         .great-left{
-            padding-top: 150px;
-            margin-left: 80px;
+            flex: 1; /* Kichik ekranlarda moslashadi */
+            text-align: center; /* Markazga olib kelish */
+            margin: 20px; /* Tashqi bo‘sh joy */
 
             h1{
                 color: white;
-                font-size: 40px;
+                font-size: 32px; /* Moslashuvchan shrift o'lchami */
                 line-height: 40px;
                 font-weight: 400;
-                width: 282px;
+                width: auto; /* O'ramga to'g'rilanadi */
             }
 
             p{
                 margin-top: 15px;
-                width: 295px;
+                width: auto; /* Matn maydoni o'ramga moslashadi */
                 color: white;
                 font-weight: 400;
                 font-size: 15px;
@@ -404,11 +404,16 @@
         }
 
         .great-right{ 
-            position: relative;
-            top: 100px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Rasmlar bir qatorga sig'masa yangi qatorga o'tadi */
+            margin: 20px;
 
             img{
-                margin-left: 15px;
+                width: 297px;
+                height: 229px;
+                margin: 10px; /* Rasmlar orasiga bo'sh joy */
+                border-radius: 8px; /* Rasmlarga burchakli radius qo'shildi */
             }
 
     }
@@ -422,7 +427,7 @@
         display: flex;
         gap: 25px;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: auto;
         margin-top: 45px;
     }
@@ -602,6 +607,7 @@ top: 500px;
 }
 
 @media (max-width: 1400px) {
+
     .browse-wrapper {
         flex-wrap: wrap;
         justify-content: center;
@@ -626,6 +632,28 @@ top: 500px;
     .choose {
         height: 520px;
     }
+
+    .great {
+        .great-wrapper{
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .great-right{
+            margin-top: 20px;
+            flex-direction: column-reverse;
+            display: inline;
+        }
+        
+    }
+
+    .premium {
+        img{
+            width: 447px;
+            height: 332px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -644,6 +672,29 @@ top: 500px;
             gap: 15px;
         }
     }
+
+    .premium{
+        gap: 15px;
+        .premium-left{
+            h1{
+                font-size: 25px;
+                width: 320px;
+                line-height: 35px;
+            }
+
+            p{
+                width: 400px;
+                font-size: 14px;
+            }
+        }
+
+        img{
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+
 }
 
 @media (max-width: 800px) {
@@ -681,11 +732,43 @@ top: 500px;
     .choose .choose-top h1 {
         padding-top: 20px;
     }
+
+
+}
+
+@media (max-width: 768px) {
+    .premium{
+        flex-direction: column;
+
+        .premium-left{
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    .subscribe{
+         .subscribe-wrapper{
+
+            width: 90%;
+            margin:50px auto;
+         }
+    }
 }
 
 @media (max-width: 707px) {
     .choose {
         height: 820px;
+    }
+
+    .great{
+        .great-wrapper{
+            .great-right{
+                img{
+                    width: 250px;
+                    height: 200px;
+                }
+            }
+        }
     }
 }
 
@@ -785,5 +868,24 @@ top: 500px;
     .most .most-top h1 {
         width: 300px;
         margin: auto;
+    }
+
+    .great .great-top{
+         h1{
+            width: 350px;
+            font-size: 30px;
+         }
+    }
+
+    .premium {
+        .premium-left{
+            h1{
+                margin: auto;
+            }
+
+            p{
+                width: 350px;
+            }
+        }
     }
 }
