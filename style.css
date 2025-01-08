@@ -405,7 +405,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #050B20;
+  color: #050b20;
 }
 .great .great-top button {
   margin: auto;
@@ -414,14 +414,14 @@
   width: 145px;
   height: 60px;
   background: transparent;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   border-radius: 16px;
 }
 .great .great-top button:hover {
-  background-color: #050B20;
+  background-color: #050b20;
   color: white;
 }
 .great .great-wrapper {
@@ -430,7 +430,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  background-color: #405FF2;
+  background-color: #405ff2;
   height: auto; /* Balandlik avtomatik o'lchansin */
   padding: 20px; /* Kichik ekranlar uchun bo'sh joy qo'shish */
   border-radius: 16px;
@@ -561,7 +561,7 @@
 .premium {
   position: relative;
   top: 450px;
-  background-color: #F9FBFC;
+  background-color: #f9fbfc;
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -584,7 +584,7 @@
   margin-top: 15px;
   width: 188px;
   height: 53px;
-  background-color: #405FF2;
+  background-color: #405ff2;
   font-weight: 500;
   line-height: 15px;
   font-size: 15px;
@@ -621,7 +621,7 @@
   margin-top: 25px;
   width: 587px;
   height: 65px;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #e9e9e9;
   border-radius: 16px;
 }
 .subscribe .subscribe-wrapper input {
@@ -629,7 +629,7 @@
   padding: 25px;
 }
 .subscribe .subscribe-wrapper button {
-  background-color: #405FF2;
+  background-color: #405ff2;
   color: white;
   width: 115px;
   height: 51px;

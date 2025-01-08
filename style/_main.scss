@@ -79,7 +79,6 @@
     }
 }
 
-
 .browse {
     .browse-top {
         h1 {
@@ -118,75 +117,72 @@
                 text-align: center;
             }
         }
+    }
+}
 
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+    .car1 {
+        background-color: #e9f2ff;
+        button {
+            background-color: #405ff2;
         }
     }
-
-    .car-container {
+    .car2 {
+        background-color: #ffe9f3;
+        button {
+            background-color: #050b20;
+        }
+    }
+    .car {
         display: flex;
-        justify-content: center;
-        gap: 25px;
-        margin-top: 100px;
-        .car1 {
-            background-color: #e9f2ff;
-            button {
-                background-color: #405ff2;
-            }
-        }
-        .car2 {
-            background-color: #ffe9f3;
-            button {
-                background-color: #050b20;
-            }
-        }
-        .car {
-            display: flex;
-            border-radius: 16px;
-            width: 685px;
-            height: 390px;
+        border-radius: 16px;
+        width: 685px;
+        height: 390px;
 
-            h1 {
-                padding-top: 80px;
-                margin-left: 60px;
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 45px;
-                color: #050b20;
-                width: 250px;
-            }
+        h1 {
+            padding-top: 80px;
+            margin-left: 60px;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 45px;
+            color: #050b20;
+            width: 250px;
+        }
 
-            p {
-                margin-left: 60px;
-                width: 365px;
-                margin-top: 10px;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 27px;
-                color: #050b20;
-            }
-            button {
-                margin-left: 60px;
-                margin-top: 20px;
-                width: 160px;
-                height: 60px;
-                border-radius: 12px;
-                color: white;
-                border: none;
-                font-size: 15px;
-                line-height: 15px;
-                font-weight: 500;
-            }
-            img {
-                width: 110px;
-                height: 110px;
-                position: relative;
-                top: 250px;
-                left: 50px;
-            }
+        p {
+            margin-left: 60px;
+            width: 365px;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 27px;
+            color: #050b20;
+        }
+        button {
+            margin-left: 60px;
+            margin-top: 20px;
+            width: 160px;
+            height: 60px;
+            border-radius: 12px;
+            color: white;
+            border: none;
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 500;
+        }
+        img {
+            width: 110px;
+            height: 110px;
+            position: relative;
+            top: 250px;
+            left: 50px;
         }
     }
-
-
+}
 .most {
     .most-top {
         h1 {
@@ -329,64 +325,64 @@
     }
 }
 
-.great{
+.great {
     position: relative;
     top: 300px;
-    .great-top{
-        max-width: 1000px;  
+    .great-top {
+        max-width: 1000px;
         width: 100%;
         margin: auto;
-        .buttons{
+        .buttons {
             flex-wrap: wrap;
             margin: auto;
         }
-        h1{
+        h1 {
             text-align: center;
             width: 465px;
             margin: auto;
             font-weight: 700;
             font-size: 40px;
             line-height: 40px;
-            color: #050B20;
+            color: #050b20;
         }
 
-        button{
+        button {
             margin: auto;
             margin-top: 35px;
             margin-left: 10px;
             width: 145px;
             height: 60px;
             background: transparent;
-            border: 1px solid #E1E1E1;
+            border: 1px solid #e1e1e1;
             font-weight: 600;
             font-size: 16px;
             line-height: 16px;
             border-radius: 16px;
         }
 
-        button:hover{
-            background-color: #050B20;
+        button:hover {
+            background-color: #050b20;
             color: white;
         }
     }
 
-    .great-wrapper{
+    .great-wrapper {
         display: flex;
         flex-wrap: wrap; /* Kichik ekranlarda sathni to'g'rilash uchun */
         justify-content: center;
         align-items: center;
         margin-top: 100px;
-        background-color: #405FF2;
+        background-color: #405ff2;
         height: auto; /* Balandlik avtomatik o'lchansin */
         padding: 20px; /* Kichik ekranlar uchun bo'sh joy qo'shish */
         border-radius: 16px;
 
-        .great-left{
+        .great-left {
             flex: 1; /* Kichik ekranlarda moslashadi */
             text-align: center; /* Markazga olib kelish */
             margin: 20px; /* Tashqi bo‘sh joy */
 
-            h1{
+            h1 {
                 color: white;
                 font-size: 32px; /* Moslashuvchan shrift o'lchami */
                 line-height: 40px;
@@ -394,7 +390,7 @@
                 width: auto; /* O'ramga to'g'rilanadi */
             }
 
-            p{
+            p {
                 margin-top: 15px;
                 width: auto; /* Matn maydoni o'ramga moslashadi */
                 color: white;
@@ -404,27 +400,26 @@
             }
         }
 
-        .great-right{ 
+        .great-right {
             display: flex;
             justify-content: center;
             flex-wrap: wrap; /* Rasmlar bir qatorga sig'masa yangi qatorga o'tadi */
             margin: 20px;
 
-            img{
+            img {
                 width: 297px;
                 height: 229px;
                 margin: 10px; /* Rasmlar orasiga bo'sh joy */
                 border-radius: 8px; /* Rasmlarga burchakli radius qo'shildi */
             }
-
+        }
     }
 }
-}
 
-.team{
+.team {
     position: relative;
     top: 350px;
-    .team-wrapper{
+    .team-wrapper {
         display: flex;
         gap: 25px;
         justify-content: center;
@@ -433,8 +428,8 @@
         margin-top: 45px;
     }
 
-    .team-top{
-        h1{
+    .team-top {
+        h1 {
             text-align: center;
             color: black;
             font-weight: 700;
@@ -445,43 +440,43 @@
         }
     }
 
-    .team-card{
+    .team-card {
         width: 256px;
         height: 393px;
         background-size: cover;
         object-fit: cover;
-        h3{
+        h3 {
             padding-top: 30px;
             text-align: center;
         }
-        p{
+        p {
             padding-top: 10px;
             text-align: center;
         }
     }
 
-    .team1{
+    .team1 {
         background-image: url(../images/team1.png);
     }
-    .team2{
+    .team2 {
         background-image: url(../images/team2.png);
     }
-    .team3{
+    .team3 {
         background-image: url(../images/team3.png);
     }
-    .team4{
+    .team4 {
         background-image: url(../images/team4.png);
     }
-    .team5{
+    .team5 {
         background-image: url(../images/team5.png);
     }
 }
 
-.blog{
+.blog {
     position: relative;
-    top: 400px; 
-    .blog-top{
-        h1{
+    top: 400px;
+    .blog-top {
+        h1 {
             text-align: center;
             color: black;
             font-weight: 700;
@@ -490,9 +485,8 @@
             width: 333px;
             margin: auto;
         }
-
     }
-    .blog-wrapper{
+    .blog-wrapper {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -500,18 +494,18 @@
         gap: 25px;
         margin-top: 45px;
 
-        .blog-card{
-            img{
-            border-radius: 16px;
+        .blog-card {
+            img {
+                border-radius: 16px;
             }
 
-            p{
+            p {
                 margin-top: 5px;
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 27px;
             }
-            h3{
+            h3 {
                 margin-top: 10px;
                 font-weight: 500;
                 font-size: 16px;
@@ -522,34 +516,34 @@
     }
 }
 
-.premium{
+.premium {
     position: relative;
     top: 450px;
-    background-color: #F9FBFC;
+    background-color: #f9fbfc;
     margin-top: 80px;
     display: flex;
     justify-content: center;
     gap: 100px;
     align-items: center;
-    .premium-left{
-        h1{
+    .premium-left {
+        h1 {
             width: 414px;
             font-size: 40px;
             line-height: 56px;
         }
 
-        p{
+        p {
             margin-top: 15px;
             width: 502px;
             font-weight: 400;
             font-size: 15px;
             line-height: 27px;
         }
-        button{
+        button {
             margin-top: 15px;
             width: 188px;
             height: 53px;
-            background-color: #405FF2;
+            background-color: #405ff2;
             font-weight: 500;
             line-height: 15px;
             font-size: 15px;
@@ -560,16 +554,16 @@
     }
 }
 
-.subscribe{
-position: relative;
-top: 500px;
-    h1{
+.subscribe {
+    position: relative;
+    top: 500px;
+    h1 {
         font-weight: 500;
         font-size: 30px;
         line-height: 30px;
         text-align: center;
     }
-    p{
+    p {
         width: 350px;
         margin-top: 10px;
         font-weight: 400;
@@ -580,7 +574,7 @@ top: 500px;
         margin-top: 15px;
     }
 
-    .subscribe-wrapper{
+    .subscribe-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -588,16 +582,16 @@ top: 500px;
         margin-top: 25px;
         width: 587px;
         height: 65px;
-        border: 1px solid #E9E9E9;
+        border: 1px solid #e9e9e9;
         border-radius: 16px;
 
-        input{
+        input {
             border: none;
             padding: 25px;
         }
 
-        button{
-            background-color: #405FF2;
+        button {
+            background-color: #405ff2;
             color: white;
             width: 115px;
             height: 51px;
@@ -608,7 +602,6 @@ top: 500px;
 }
 
 @media (max-width: 1400px) {
-
     .browse-wrapper {
         flex-wrap: wrap;
         justify-content: center;
@@ -635,22 +628,21 @@ top: 500px;
     }
 
     .great {
-        .great-wrapper{
+        .great-wrapper {
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        .great-right{
+        .great-right {
             margin-top: 20px;
             flex-direction: column-reverse;
             display: inline;
         }
-        
     }
 
     .premium {
-        img{
+        img {
             width: 447px;
             height: 332px;
         }
@@ -674,28 +666,26 @@ top: 500px;
         }
     }
 
-    .premium{
+    .premium {
         gap: 15px;
-        .premium-left{
-            h1{
+        .premium-left {
+            h1 {
                 font-size: 25px;
                 width: 320px;
                 line-height: 35px;
             }
 
-            p{
+            p {
                 width: 400px;
                 font-size: 14px;
             }
         }
 
-        img{
+        img {
             width: 350px;
             height: 250px;
         }
     }
-
-
 }
 
 @media (max-width: 800px) {
@@ -733,26 +723,23 @@ top: 500px;
     .choose .choose-top h1 {
         padding-top: 20px;
     }
-
-
 }
 
 @media (max-width: 768px) {
-    .premium{
+    .premium {
         flex-direction: column;
 
-        .premium-left{
+        .premium-left {
             text-align: center;
             margin: auto;
         }
     }
 
-    .subscribe{
-         .subscribe-wrapper{
-
+    .subscribe {
+        .subscribe-wrapper {
             width: 90%;
-            margin:50px auto;
-         }
+            margin: 50px auto;
+        }
     }
 }
 
@@ -761,10 +748,10 @@ top: 500px;
         height: 820px;
     }
 
-    .great{
-        .great-wrapper{
-            .great-right{
-                img{
+    .great {
+        .great-wrapper {
+            .great-right {
+                img {
                     width: 250px;
                     height: 200px;
                 }
@@ -871,20 +858,20 @@ top: 500px;
         margin: auto;
     }
 
-    .great .great-top{
-         h1{
+    .great .great-top {
+        h1 {
             width: 350px;
             font-size: 30px;
-         }
+        }
     }
 
     .premium {
-        .premium-left{
-            h1{
+        .premium-left {
+            h1 {
                 margin: auto;
             }
 
-            p{
+            p {
                 width: 350px;
             }
         }
