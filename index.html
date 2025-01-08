@@ -12,8 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div id="loading-spinner"></div>
     <div class="sidebar">
       <div class="sidebar_icon">
         <i class="fa-solid fa-x"></i>
@@ -48,7 +50,7 @@
       </div>
     </div>
 
-    <header  class="header">
+    <header data-aos="fade-down"  class="header">
       <div class="navbar container">
         <div class="left_head">
           <h1>BOXCARS</h1>
@@ -91,7 +93,7 @@
       </div>
     </header>
 
-    <div  class="head">
+    <div  data-aos="fade-right" class="head">
       <div class="head-top">
         <p>Find cars for sale and for rent near you</p>
         <h1>Find Your Dream Car</h1>
@@ -132,7 +134,7 @@
       </div>
     </div>
 
-    <div  class="browse">
+    <div  data-aos="fade-down-right" class="browse">
       <div class="browse-top">
         <h1>Browse by Type</h1>
       </div>
@@ -202,7 +204,7 @@
       </div>
     </div>
 
-    <div  class="most">
+    <div data-aos="zoom-in" class="most">
       <div class="most-top">
         <h1>The Most Searched Cars</h1>
       </div>
@@ -221,7 +223,7 @@
       </div>
     </div>
 
-    <div  class="choose container">
+    <div data-aos="zoom-in-down" class="choose container">
       <div class="choose-top">
         <h1>Why Choose Us?</h1>
       </div>
@@ -265,7 +267,7 @@
       </div>
     </div>
 
-    <div  class="latest">
+    <div data-aos="zoom-out" class="latest">
       <div class="latest-top">
         <h1>Latest Cars</h1>
       </div>
@@ -277,7 +279,7 @@
       </div>
     </div>
 
-    <div class="great container">
+    <div data-aos="zoom-out-up" class="great container">
       <center>      <div class="great-top">
         <h1>Need Some Inspiration?</h1>
         <div class="buttons">
@@ -311,30 +313,30 @@
       </div>
 
       <div class="team-wrapper">
-        <div class="team-card team1">
+        <div  data-aos="zoom-out-right" class="team-card team1">
           <h3>Courtney Henry</h3>
           <p>Development Manager</p>
         </div>
-        <div class="team-card team2">
+        <div  data-aos="zoom-out-right" class="team-card team2">
           <h3>Jerome Bell</h3>
           <p>Software Developer</p>
         </div>
-        <div class="team-card team3">
+        <div  data-aos="zoom-out-right" class="team-card team3">
         <h3>Jerome Bell</h3>
         <p>Software Tester </p>
         </div>
-        <div class="team-card team4">
+        <div  ata-aos="zoom-in-left" class="team-card team4">
           <h3>Arlene McCoy</h3>
           <p>Arlene McCoy</p>
         </div>
-        <div class="team-card team5">
+        <divv ata-aos="zoom-in-left" class="team-card team5">
           <h3>Jenny Wilson</h3>
           <p>UI/UX Designer</p>
-        </div>
+        </divv>
       </div>
     </div>
 
-      <div class="blog">
+      <div data-aos="zoom-out-down" class="blog">
         <div class="blog-top">
           <h1>Latest Blog Posts</h1>
         </div>
@@ -360,7 +362,8 @@
         </div>
       </div>
 
-      <div  class="premium">
+      <div data-aos="fade-up"
+      data-aos-duration="3000" class="premium">
         <div class="premium-left">
           <h1>Explore Our Premium
             Brands</h1>
@@ -371,7 +374,9 @@
         <img src="./images/premium.png" alt="">
       </div>
 
-      <div class="subscribe">
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="subscribe">
         <h1>Join BoxCar</h1>
         <p>Receive pricing updates, shopping tips & more!</p>
         <div class="subscribe-wrapper">
@@ -380,7 +385,9 @@
       </div>
       </div>
 
-      <footer>
+      <footer  data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <div class="footer container">
           <div class="footer-column">
               <h3>Company</h3>
@@ -446,6 +453,10 @@
       </div>
       </footer>
 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="/script.js"></script>
   </body> 
 </html>
